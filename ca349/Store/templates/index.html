@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+    {# part 1 #}
+    <div id="section-1">
+        <div style="display: flex">
+            <div style="width: 50%; height: 100%; color: black; font-size: 64px; font-weight: 800; margin-left: 90px">
+                Discover the latest mobile phones and accessories
+            </div>
+            <div>
+                <br>
+                <div style="font-size: 20px;">Experience cutting-edge technology and stay connected on the go.</div>
+                <br>
+                <button class="login" style="background-color: black; color: white;">
+                    Shop Now
+                </button>
+            </div>
+        </div>
+        <div style="display:flex;justify-content: center; align-items: center">
+            <img style="width: 85%; height: 85%" src="{% static 'image/home_img_1.png' %}"/>
+        </div>
+    </div>
+    <hr>
+    {# part 2 #}
+    <div id="section-2">
+        <div style="display: flex">
+            <div style="width: 50%; height: 100%; color: black; font-size: 64px; font-weight: 800; margin-left: 90px">
+                Discover the latest mobile phones and accessories at our store.
+            </div>
+        </div>
+
+        <div>
+            <div>
+                We offer a wide range of high-quality smartphones and accessories to meet your needs.
+            </div>
+        </div>
+    </div>
+
+
+{% endblock main %}

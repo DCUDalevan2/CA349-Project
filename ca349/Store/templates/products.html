@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{%  block main %}
+    <br>
+    <h1 style="text-align: center; font-size: 64px; font-weight: 600;">Featured Products</h1>
+    <p style="text-align: center">Discover our latest selection of high-quality mobile phones.</p>
+<div class="product_grid">
+    {% for phone in products %}
+        <div class="product_grid_cell">
+        <img src="{{ phone.cover_pic.url }}" alt="picture">
+            <div>
+                <p>{{ phone }}</p>
+                <p>{{ phone.memory }}</p>
+                <p>€{{ phone.price }}</p>
+            </div>
+
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

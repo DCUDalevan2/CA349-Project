@@ -1,0 +1,164 @@
+html {
+    font-family: Inter, serif;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    background: white;
+    margin-bottom: 8px;
+    padding: 8px;
+    display: flex;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.nav_icon {
+    width: 100px;
+    height: 48px;
+
+}
+
+.nav_2 {
+    display: flex;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    list-style: none;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.nav_underline {
+    width: 45%;
+    height: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+    border: 1px #ACACAC solid
+}
+
+li {
+    display: list-item;
+    padding: .5rem;
+    margin-right: 5px;
+
+}
+
+
+.login {
+    width: 124px;
+    height: 48px;
+    background: #0ACE9F;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+main {
+    background-color: white;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+footer {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.text-container h1, .text-container p {
+    font-weight: 800;
+    font-size: 64px;
+    color: black;
+    margin: 0;
+}
+
+.text-container p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature {
+    background: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 944px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.product_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    text-align: center;
+    margin-top: 48px;
+
+}
+
+.product_grid img {
+    height: 180px;
+
+}
+
+.product_grid_cell {
+
+}
+
+.product_grid_cell_one {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.product_grid_cell_two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+
+.product_grid_cell_three {
+    grid-column: 1;
+    grid-row: 2 / 5;
+}
+
+.product_grid_cell_four {
+    grid-column: 3;
+    grid-row: 3;
+}

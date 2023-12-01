@@ -1,0 +1,8 @@
+### Mac ###
+.DS_Store
+
+### Shell script file ###
+*.sh
+
+### Pycaharm ###
+.idea
