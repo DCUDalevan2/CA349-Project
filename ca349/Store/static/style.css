@@ -162,3 +162,8 @@ a {
     grid-column: 3;
     grid-row: 3;
 }
+
+.boxes-list li{
+    list-style-image: url(image/list_box.svg);
+    margin-top: 10px;
+}
