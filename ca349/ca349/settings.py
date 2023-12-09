@@ -29,7 +29,6 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -38,7 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "Store.apps.StoreConfig",
-    # "costomers.apps.costomersConfig",
+    # "customer_users.apps.CustomerUsersConfig",
+
+    # 'djstripe',
 ]
 
 MIDDLEWARE = [
@@ -86,7 +87,7 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
-
+# AUTH_USER_MODEL = 'customer_users.AppUser'
 AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
@@ -130,3 +131,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'Store/media')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# LOGIN_REDIRECT_URL = 'index'
+# LOGOUT_REDIRECT_URL = 'login'
+#
+# ## Stripe
+STRIPE_PUBLIC_KEY_TEST = os.getenv('pk_live_51NsPPUIqpw9YJY5mOnjIor7wJjGTXQs4lS8VvBISrwzJxk50o6MFaPDSc4y4ccKwaVvlHI1sh4HWM3hHvav56rqP00gMDNH34F')
+STRIPE_SECRET_KEY_TEST = os.getenv('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')
+# STRIPE_WEBHOOK_SECRET_TEST = os.getenv('STRIPE_WEBHOOK_SECRET_TEST')
+# PRODUCT_PRICE = os.getenv('PRODUCT_PRICE')

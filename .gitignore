@@ -6,3 +6,10 @@
 
 ### Pycaharm ###
 .idea
+
+
+### virtural environment ###
+venv
+
+### cache ###
+__pycache__

@@ -43,7 +43,6 @@ li {
 
 }
 
-
 .login {
     width: 124px;
     height: 48px;
@@ -124,7 +123,6 @@ a {
     text-decoration: none;
 }
 
-
 .product_grid {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -135,12 +133,15 @@ a {
 }
 
 .product_grid img {
-    height: 180px;
-
+    height: 30vh;
+    margin-bottom: 40px;
+    padding: 18px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.25);
 }
 
 .product_grid_cell {
-
 }
 
 .product_grid_cell_one {
@@ -163,7 +164,13 @@ a {
     grid-row: 3;
 }
 
-.boxes-list li{
+.product_grid_box {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.boxes-list li {
     list-style-image: url(image/list_box.svg);
     margin-top: 10px;
 }

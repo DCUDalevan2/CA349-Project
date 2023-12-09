@@ -3,6 +3,10 @@ from django.db import models
 # Create your models here.
 from django.db import models
 from django.urls import reverse
+from django.contrib.auth.models import User
+from django.db import models
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 
 class Category(models.Model):
@@ -30,8 +34,8 @@ class Product(models.Model):
     category_name = models.ForeignKey(Category, on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
     brand = models.CharField(max_length=50)
-    colour = models.ForeignKey(Colour, on_delete=models.CASCADE)
-    memory = models.ForeignKey(Memory, on_delete=models.CASCADE)
+    colour = models.ForeignKey(Colour, on_delete=models.CASCADE, blank=True, null=True)
+    memory = models.ForeignKey(Memory, on_delete=models.CASCADE, blank=True, null=True)
     price = models.DecimalField(decimal_places=2, max_digits=8)
     cover_pic = models.ImageField(default='placeholder.png', blank=True)
 
