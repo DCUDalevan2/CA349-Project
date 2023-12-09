@@ -5,38 +5,244 @@
 
     {# part 1 #}
     <div id="section-1">
-        <div style="display: flex">
-            <div style="width: 50%; height: 100%; color: black; font-size: 64px; font-weight: 800; margin-left: 90px">
-                Discover the latest mobile phones and accessories
-            </div>
-            <div>
-                <br>
-                <div style="font-size: 20px;">Experience cutting-edge technology and stay connected on the go.</div>
-                <br>
-                <button class="login" style="background-color: black; color: white;">
-                    Shop Now
-                </button>
+        <div class="container">
+            <div class="row align-center" style="align-items: center">
+                <div class="h1 col-sm-4"><strong>Discover the latest mobile phones and accessories</strong></div>
+                <div class="col-sm-8 text-center" style="align-items: center">
+                    <p>Experience cutting-edge technology and stay connected on the go.</p>
+                    <div class="d-flex justify-content-evenly">
+                        <button type="button" class="btn btn-dark btn-lg">Shop</button>
+                        <button type="button" class="btn active btn-lg">Learn More</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div style="display:flex;justify-content: center; align-items: center">
-            <img style="width: 85%; height: 85%" src="{% static 'image/home_img_1.png' %}"/>
-        </div>
+        <img style="width: 80%; height: 80%" class="mx-auto d-block" src="{% static 'image/home_img_1.png' %}"
+             alt="img1"/>
     </div>
     <hr>
     {# part 2 #}
     <div id="section-2">
-        <div style="display: flex">
-            <div style="width: 50%; height: 100%; color: black; font-size: 64px; font-weight: 800; margin-left: 90px">
-                Discover the latest mobile phones and accessories at our store.
-            </div>
-        </div>
-
-        <div>
-            <div>
-                We offer a wide range of high-quality smartphones and accessories to meet your needs.
+        <div class="container">
+            <div class="row align-center gy-5">
+                <div class="h1 col-sm-5"><strong>Discover the latest mobile phones and accessories at our
+                    store.</strong></div>
+                <div class="col-12 align-center">
+                    <p>We offer a wide range of high-quality smartphones and accessories to meet your needs.</p>
+                </div>
+                <div class="col-5 align-center">
+                    <ul class="boxes-list">
+                        <li>Stay connected with cutting-edge technology.</li>
+                        <li>Enhance your mobile experience with our premium accessories.</li>
+                        <li>Find the perfect phone that suits your lifestyle.</li>
+                    </ul>
+                </div>
+                <div class="col-7">
+                    <img style="width: 100%; height: 100%" class="mx-auto d-block"
+                         src="{% static 'image/home_img_2.png' %}" alt="img2"/>
+                </div>
             </div>
         </div>
     </div>
+    <hr>
+    {# part 3 #}
+    <div class="section-3">
+        <div class="container">
+            <div class="row mt-5 text-center justify-content-center">
+                <div class="col-lg-4 m-auto">
+                    <div style="margin-bottom: 12px">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M25 0C11.1925 0 0 11.1925 0 25C0 38.8075 11.1925 50 25 50C38.8075 50 50 38.8075 50 25C50 11.1925 38.8075 0 25 0ZM33.2954 36.0484C32.9022 36.4395 32.4899 36.8498 32.1552 37.1855C31.8538 37.4879 31.6411 37.8609 31.5333 38.2651C31.381 38.8357 31.2581 39.4123 31.0524 39.9657L29.2994 44.6885C27.9123 44.9909 26.4768 45.1613 25 45.1613V42.4012C25.1704 41.129 24.2298 38.746 22.7188 37.2349C22.1139 36.63 21.7742 35.8095 21.7742 34.9536V31.7268C21.7742 30.5534 21.1421 29.4748 20.1149 28.9073C18.6663 28.1058 16.6058 26.9859 15.1946 26.2752C14.0373 25.6925 12.9667 24.9506 12.004 24.0827L11.9234 24.0101C11.2349 23.3886 10.6237 22.6867 10.1028 21.9194C9.15726 20.5312 7.61694 18.248 6.61593 16.7641C8.67943 12.1774 12.3982 8.49395 17.0192 6.49294L19.4395 7.70363C20.5121 8.23992 21.7742 7.46069 21.7742 6.26109V5.12198C22.5796 4.99194 23.3992 4.90927 24.2329 4.87802L27.0857 7.73085C27.7157 8.36089 27.7157 9.38206 27.0857 10.0121L26.6129 10.4839L25.5706 11.5262C25.256 11.8407 25.256 12.3518 25.5706 12.6663L26.0433 13.1391C26.3579 13.4536 26.3579 13.9647 26.0433 14.2792L25.2369 15.0857C25.0855 15.2368 24.8803 15.3217 24.6663 15.3216H23.7601C23.5504 15.3216 23.3488 15.4032 23.1976 15.5504L22.1976 16.5232C22.075 16.6426 21.9935 16.7978 21.9649 16.9665C21.9363 17.1351 21.962 17.3086 22.0383 17.4617L23.6099 20.6058C23.878 21.1421 23.4879 21.7732 22.8891 21.7732H22.3206C22.126 21.7732 21.9385 21.7026 21.7923 21.5756L20.8569 20.7631C20.6452 20.5795 20.3893 20.4541 20.1145 20.3993C19.8396 20.3445 19.5553 20.3622 19.2893 20.4506L16.1472 21.498C15.9073 21.578 15.6987 21.7314 15.5508 21.9366C15.403 22.1418 15.3235 22.3883 15.3236 22.6411C15.3236 23.0978 15.5817 23.5141 15.9899 23.7188L17.1069 24.2772C18.0554 24.752 19.1018 24.999 20.1623 24.999C21.2228 24.999 22.4395 27.75 23.3881 28.2248H30.1169C30.9728 28.2248 31.7923 28.5645 32.3982 29.1694L33.7782 30.5494C34.3548 31.1261 34.6786 31.9083 34.6784 32.7238C34.6782 33.3417 34.5559 33.9535 34.3186 34.5241C34.0812 35.0946 33.7335 35.6126 33.2954 36.0484ZM42.0363 26.8397C41.4526 26.6935 40.9436 26.3357 40.6099 25.8347L38.7974 23.1159C38.5322 22.7187 38.3906 22.2518 38.3906 21.7742C38.3906 21.2966 38.5322 20.8297 38.7974 20.4325L40.7722 17.4708C41.006 17.121 41.3266 16.8367 41.7036 16.6492L43.0121 15.995C44.375 18.7087 45.1613 21.7611 45.1613 25C45.1613 25.874 45.0867 26.7298 44.9778 27.5746L42.0363 26.8397Z"
+                                  fill="black"/>
+                        </svg>
+                    </div>
+                    <p><strong>Free Shipping Worldwide</strong></p>
+                    <p>Enjoy free shipping on all orders, no matter where you are.</p>
+                </div>
+
+                <div class="col-lg-4 m-auto">
+                    <div style="margin-bottom: 12px">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <g clip-path="url(#clip0_2_77)">
+                                <path d="M43.75 0H6.25C2.80273 0 0 2.80273 0 6.25V34.375C0 37.8223 2.80273 40.625 6.25 40.625H15.625V48.8281C15.625 49.7852 16.7188 50.3418 17.4902 49.7754L29.6875 40.625H43.75C47.1973 40.625 50 37.8223 50 34.375V6.25C50 2.80273 47.1973 0 43.75 0Z"
+                                      fill="black"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2_77">
+                                    <rect width="50" height="50" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p><strong>24/7 Customer Support</strong></p>
+                    <p>Our dedicated support team is available round the clock to assist
+                        you.</p>
+                </div>
+
+                <div class="col-lg-4 m-auto">
+                    <div style="margin-bottom: 12px">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" viewBox="0 0 40 50" fill="none">
+                            <path d="M10.1168 35.4132C9.21157 34.5646 9.68344 34.8038 7.50013 34.256C6.50951 34.0069 5.63869 33.5284 4.8512 32.9552L0.125205 43.8183C-0.332082 44.87 0.522075 46.0126 1.73248 45.9696L7.22096 45.7733L10.9959 49.5115C11.8293 50.3357 13.2917 50.0789 13.749 49.0272L19.1708 36.5645C18.0417 37.1543 16.7886 37.5 15.4928 37.5C13.4615 37.5 11.5532 36.7588 10.1168 35.4132ZM39.8748 43.8183L35.1488 32.9552C34.3613 33.5294 33.4905 34.0069 32.4999 34.256C30.3051 34.8067 30.7864 34.5665 29.8832 35.4132C28.4468 36.7588 26.5374 37.5 24.5062 37.5C23.2104 37.5 21.9573 37.1534 20.8281 36.5645L26.2499 49.0272C26.7072 50.0789 28.1707 50.3357 29.003 49.5115L32.779 45.7733L38.2675 45.9696C39.4779 46.0126 40.3321 44.869 39.8748 43.8183ZM27.3958 33.2033C28.9874 31.6847 29.1697 31.8156 31.4363 31.2365C32.8832 30.8664 34.0144 29.7873 34.4019 28.4065C35.1811 25.6331 34.979 25.968 37.105 23.9388C38.1644 22.9281 38.5779 21.4545 38.1904 20.0736C37.4123 17.3022 37.4113 17.6889 38.1904 14.9146C38.5779 13.5337 38.1644 12.0601 37.105 11.0494C34.979 9.02014 35.1811 9.35412 34.4019 6.58171C34.0144 5.20088 32.8832 4.1218 31.4363 3.75169C28.5322 3.00854 28.8822 3.20287 26.7541 1.17264C25.6947 0.161917 24.15 -0.233583 22.7031 0.136527C19.8 0.8787 20.2052 0.879676 17.2969 0.136527C15.85 -0.233583 14.3053 0.160941 13.2459 1.17264C11.1199 3.2019 11.4699 3.00854 8.5647 3.75169C7.11784 4.1218 5.9866 5.20088 5.59911 6.58171C4.82099 9.35412 5.02203 9.02014 2.89601 11.0494C1.83665 12.0601 1.42207 13.5337 1.8106 14.9146C2.58872 17.684 2.58976 17.2973 1.8106 20.0727C1.42311 21.4535 1.83665 22.9271 2.89601 23.9388C5.02203 25.968 4.81995 25.6331 5.59911 28.4065C5.9866 29.7873 7.11784 30.8664 8.5647 31.2365C10.8959 31.8322 11.0699 31.7384 12.6042 33.2033C13.9824 34.5187 16.1292 34.754 17.7854 33.7716C18.4477 33.3774 19.216 33.1681 20.0005 33.1681C20.785 33.1681 21.5533 33.3774 22.2156 33.7716C23.8708 34.754 26.0176 34.5187 27.3958 33.2033ZM10.173 17.184C10.173 12.0054 14.573 7.80727 20 7.80727C25.427 7.80727 29.827 12.0054 29.827 17.184C29.827 22.3626 25.427 26.5608 20 26.5608C14.573 26.5608 10.173 22.3626 10.173 17.184Z"
+                                  fill="black"/>
+                        </svg>
+                    </div>
+                    <p><strong>Warranty for Your Peace of Mind</strong></p>
+                    <p>All our products come with a warranty to ensure your satisfaction.</p>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+        <div class="d-flex justify-content-evenly">
+            <button type="button" class="btn active btn-lg">Shop</button>
+            <p><label type="button" class="">Learn More</label>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
+                    <path d="M23.5114 14.3808L7.48758 25.4274C6.38006 26.1909 4.58916 26.1909 3.49342 25.4274L0.830644 23.5917C-0.276881 22.8282 -0.276881 21.5936 0.830644 20.8382L12.1887 13.0081L0.830644 5.17807C-0.276881 4.41456 -0.276881 3.17994 0.830644 2.42455L3.48164 0.572634C4.58916 -0.190878 6.38006 -0.190878 7.4758 0.572634L23.4996 11.6192C24.6189 12.3827 24.6189 13.6173 23.5114 14.3808Z"
+                          fill="#706D6D"></path>
+                </svg>
+            </p>
+        </div>
+        <br><br>
+
+    </div>
+    <hr>
+    {# part 4 #}
+    <div class="section-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="h1 col-sm-4"><strong>Frequently Asked Questions</strong></div>
+                    <p>Find answers to common questions about mobile phone purchases, returns, and support.</p>
+                    <button type="button" class="btn active btn-lg">Contact Us</button>
+                </div>
+                <div class="col-7">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How to buy phones?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>To buy a phone, simply browse our selection, choose the one you want, and proceed
+                                        to checkout. We offer various payment methods including Stripe, PayPal, and
+                                        credit cards.</p></div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What is the return policy?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Our return policy allows you to return a phone within 30 days of purchase for a
+                                        full refund. Please refer to our Returns & Refunds page for more
+                                        information.</p></div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    How can I get support?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>If you need support with your phone, you can contact our customer service team
+                                        via phone, email, or live chat. We are available 24/7 to assist you.</p></div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                    Can I cancel my order?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Yes, you can cancel your order as long as it has not been shipped. Please contact
+                                        our customer service team as soon as possible to request a cancellation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                    Do you offer warranties?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Yes, we offer warranties on all our phones. Each phone comes with a standard
+                                        manufacturer's warranty, and you can also purchase extended warranty plans for
+                                        additional coverage.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {# part 5 #}
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-8 col-lg-4 col-xl-3 m-auto">
+                <p class="text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="40" viewBox="0 0 51 40"
+                         fill="none">
+                        <path d="M35.603 26.2452C43.7406 20.063 47.2628 17.3407 49.5 15.5617V35C49.5 36.9959 47.9674 38.5 46.2188 38.5H4.78125C3.03256 38.5 1.5 36.9959 1.5 35V15.5702C3.74064 17.3473 7.26977 20.0634 15.4073 26.2455C15.6723 26.4478 15.9898 26.7039 16.3465 26.9915C17.2383 27.7107 18.3749 28.6273 19.5486 29.3956C21.2096 30.483 23.2835 31.52 25.4977 31.5104C27.7275 31.5265 29.8271 30.4698 31.4952 29.3752C32.6728 28.6024 33.8123 27.6812 34.6889 26.9726C35.0408 26.6881 35.3504 26.4378 35.603 26.2452ZM25.527 25.1669L25.5 25.1664L25.473 25.1669C25.2129 25.1716 24.8072 25.0834 24.2416 24.8249C23.6914 24.5734 23.0883 24.2068 22.4615 23.771C21.6203 23.1862 20.882 22.5882 20.2043 22.0394C19.8177 21.7263 19.4508 21.4292 19.0959 21.1596L19.0955 21.1593C6.86248 11.8757 5.10809 10.4398 2.50973 8.31325C2.30388 8.14477 2.09273 7.97196 1.87065 7.79057C1.64235 7.59953 1.5 7.30708 1.5 6.97917V5C1.5 3.00406 3.03256 1.5 4.78125 1.5H46.2188C47.9674 1.5 49.5 3.00406 49.5 5V6.97917C49.5 7.31843 49.3496 7.61183 49.1385 7.78308L49.1323 7.78813C48.9595 7.92988 48.7933 8.06635 48.6311 8.19955C45.9526 10.3992 44.3619 11.7054 31.9045 21.1593L31.9041 21.1596C31.5492 21.4292 31.1823 21.7263 30.7957 22.0394C30.118 22.5882 29.3797 23.1862 28.5385 23.771C27.9117 24.2068 27.3086 24.5734 26.7584 24.8249C26.1928 25.0834 25.7871 25.1716 25.527 25.1669Z"
+                              fill="white" stroke="black" stroke-width="3"/>
+                    </svg>
+                    <strong>Email</strong></p>
+                <p class="h5 mt-4">Get in touch with us for any inquiries or assistance.</p>
+                <p class="h6 mt-4 mt-xl-5"><u>CA349@dcu.ie</u></p>
+            </div>
+
+            <div class="col-md-8 col-lg-4 col-xl-3 pt-5 pt-lg-0 m-auto">
+                <p class="text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                         fill="none">
+                        <path d="M15.4768 9.88306C15.6369 10.2567 15.6709 10.6724 15.5736 11.0671C15.4764 11.4618 15.2531 11.8141 14.9378 12.0706L10.2033 15.9457C13.0707 22.0272 17.965 26.9215 24.0465 29.7889L27.9216 25.0544C28.1786 24.7397 28.5308 24.5169 28.9254 24.4197C29.3199 24.3225 29.7353 24.356 30.1091 24.5154M15.4768 9.88306L11.7268 1.13291M15.4768 9.88306L14.5577 10.277L14.5576 10.2769M15.4768 9.88306L14.5576 10.2769M11.7268 1.13291C11.5511 0.730093 11.2403 0.401209 10.8481 0.202966C10.4559 0.00472286 10.0068 -0.0504544 9.57829 0.0469487M11.7268 1.13291L10.8102 1.5327C10.8098 1.53192 10.8095 1.53114 10.8091 1.53036M11.7268 1.13291L10.8076 1.52682L10.8091 1.53036M9.57829 0.0469487L1.45315 1.92198C1.03999 2.01739 0.671375 2.25002 0.407456 2.5819C0.143538 2.91379 -9.51743e-05 3.32533 0 3.74936C0 23.7888 16.2425 40 36.2506 40C36.6748 40.0003 37.0865 39.8567 37.4186 39.5928C37.7506 39.3289 37.9833 38.9601 38.0788 38.5468M9.57829 0.0469487L9.80315 1.02134L9.80122 1.02179C10.0023 0.976388 10.213 1.00242 10.397 1.09544C10.5807 1.18827 10.7263 1.34202 10.8091 1.53036M9.57829 0.0469487L9.79993 1.02208L1.67815 2.89634L1.45318 1.92212L1.67801 2.89637C1.48526 2.94092 1.31328 3.04946 1.19015 3.20431C1.06699 3.35919 0.999956 3.55125 1 3.74913L1 3.74936C1 23.2359 16.7942 39 36.2506 39H36.2513C36.4492 39.0001 36.6414 38.9331 36.7963 38.81C36.9512 38.6868 37.0598 38.5148 37.1044 38.322L38.0788 38.5468M38.0788 38.5468L39.9538 30.4217M38.0788 38.5468L37.1044 38.3218L38.9782 30.2024L39.9538 30.4217M39.9538 30.4217C40.0506 29.9911 39.9942 29.5402 39.7945 29.1466C39.5947 28.7531 39.264 28.4415 38.8593 28.2654M39.9538 30.4217L38.9794 30.1968L38.9787 30.2002C39.0237 29.9972 38.9969 29.7848 38.9028 29.5993C38.8087 29.4138 38.6531 29.2669 38.4627 29.1834L38.4653 29.1846L38.8593 28.2654M38.8593 28.2654L30.1091 24.5154M38.8593 28.2654L38.4604 29.1824L29.7171 25.4353L30.1091 24.5154M30.1091 24.5154L29.7152 25.4345L29.7165 25.435C29.5422 25.3609 29.3485 25.3453 29.1646 25.3907C28.9805 25.436 28.8161 25.54 28.6962 25.6869L28.6954 25.6878L24.8204 30.4223L24.326 31.0262L23.62 30.6934C17.3285 27.727 12.2652 22.6637 9.2988 16.3721L8.96594 15.6662L9.56993 15.1718L14.3044 11.2968L14.3068 11.2948C14.4535 11.1754 14.5574 11.0115 14.6027 10.8278C14.6479 10.6442 14.6321 10.4507 14.5576 10.2769M14.5576 10.2769L10.8091 1.53036"
+                              fill="white" stroke="black" stroke-width="2"/>
+                    </svg>
+                    <strong>Phone</strong></p>
+                <p class="h5 mt-4">Call us for any questions or support.</p>
+                <p class=" mt-4 mt-xl-5"><u>+353 000-0000</u></p>
+            </div>
+
+            <div class="col-md-8 col-lg-4 col-xl-3 pt-5 pt-lg-0 m-auto">
+                <p class="text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="55" viewBox="0 0 39 55"
+                         fill="none">
+                        <path d="M18.7519 53.0701C16.0853 48.9814 13.8207 45.5692 11.8974 42.6714C8.46525 37.5003 6.12017 33.967 4.51812 31.1495C3.28619 28.9829 2.54519 27.3238 2.10302 25.7446C1.66362 24.1752 1.5 22.6157 1.5 20.625C1.5 9.98214 9.637 1.5 19.5 1.5C29.363 1.5 37.5 9.98214 37.5 20.625C37.5 22.6157 37.3364 24.1752 36.897 25.7446C36.4548 27.3238 35.7138 28.9829 34.4819 31.1495C32.8798 33.967 30.5347 37.5003 27.1026 42.6715C25.1793 45.5693 22.9146 48.9815 20.248 53.0703C19.8718 53.6433 19.128 53.6432 18.7519 53.0701Z"
+                              fill="white" stroke="black" stroke-width="3"/>
+                    </svg>
+                    Office
+                </p>
+                <p class="h5 mt-4">Visit our office for any inquiries or assistance.</p>
+                <p class="h6 mt-4 mt-xl-5"><u>9PPV+F2 Dublin 9, Whitehall</u></p>
+            </div>
+        </div>
+    </div>
+
+
 
 
 {% endblock main %}
