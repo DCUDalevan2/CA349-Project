@@ -4,11 +4,110 @@
 {% block main %}
     <div class="container" style="margin-top: 48px">
         <div class="row">
-            <div class="col-12">
-                <h1><strong>Buy {{ product.name }}</strong></h1>
+            <div class="col-5">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h1><strong>Buy {{ product.name }}</strong></h1>
+                    </div>
+                    <br><br><br>
+                    <div class="col-lg-12">
+                        <img src="{% static 'image/stars.png' %}" height="20px" alt="stars">
+                    </div>
+                    <br><br><br>
+                    <div class="col-lg-12">
+                        <div style="width: 100%; height: 100%; background: white; box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25); border-radius: 10px">
+                            <img src="{{ product.cover_pic.url }}" height="380px" alt="picture">
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="col-lg-12">
+                        <br>
+                        <p><label type="button" class="">Spec</label>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26"
+                                 fill="none">
+                                <path d="M23.5114 14.3808L7.48758 25.4274C6.38006 26.1909 4.58916 26.1909 3.49342 25.4274L0.830644 23.5917C-0.276881 22.8282 -0.276881 21.5936 0.830644 20.8382L12.1887 13.0081L0.830644 5.17807C-0.276881 4.41456 -0.276881 3.17994 0.830644 2.42455L3.48164 0.572634C4.58916 -0.190878 6.38006 -0.190878 7.4758 0.572634L23.4996 11.6192C24.6189 12.3827 24.6189 13.6173 23.5114 14.3808Z"
+                                      fill="#706D6D"></path>
+                            </svg>
+                            <br>
+                        </p>
+                        <p><label type="button" class="">Learn More</label>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26"
+                                 fill="none">
+                                <path d="M23.5114 14.3808L7.48758 25.4274C6.38006 26.1909 4.58916 26.1909 3.49342 25.4274L0.830644 23.5917C-0.276881 22.8282 -0.276881 21.5936 0.830644 20.8382L12.1887 13.0081L0.830644 5.17807C-0.276881 4.41456 -0.276881 3.17994 0.830644 2.42455L3.48164 0.572634C4.58916 -0.190878 6.38006 -0.190878 7.4758 0.572634L23.4996 11.6192C24.6189 12.3827 24.6189 13.6173 23.5114 14.3808Z"
+                                      fill="#706D6D"></path>
+                            </svg>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-12">
-                <img src="{% static 'image/stars.png' %}" height="20px" alt="stars">
+            <div class="col-7">
+                <div class="row text-center">
+                    <div class="h1">
+                        Pick your Colour
+                    </div>
+                    <div class="row  text-center align-items-center" style="margin-top: 24px; margin-bottom: 24px">
+                        <div class="col-3">
+                        </div>
+                        <div class="col-2">
+                            <div style="width: 28px; height: 28px; background: #81b6d7; border-radius: 9999px"></div>
+                        </div>
+                        <div class="col-2">
+                            <div style="width: 28px; height: 28px; background: #afda7e; border-radius: 9999px"></div>
+                        </div>
+                        <div class="col-2">
+                            <div style="width: 28px; height: 28px; background: #474644;  border: 3px solid #5bdcd1; border-radius: 9999px"></div>
+                        </div>
+                        <div class="col-2">
+                            <div style="width: 28px; height: 28px; background: #ACA18A; border-radius: 9999px"></div>
+                        </div>
+                    </div>
+
+                    <div class="h2">
+                        Select Memory:
+                    </div>
+
+                    <div class="row justify-content-around">
+                        <div class="col-4">
+                            <div style="box-shadow: 0px 4px 4px rgba(0,0,0,0.63); border: 3px solid #66ded2; border-radius: 10px; padding: 20px; margin: 20px">
+                                128GB
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; padding: 20px; margin: 20px">
+                                256GB
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="col-4">
+                            <div style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; padding: 20px; margin: 20px">
+                                512GB
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; padding: 20px; margin: 20px">
+                                1TB
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px">
+                        <div style="width:40%; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; padding: 20px; margin: auto;">
+                            <p><strong>Your Price:</strong></p>
+                            <p>€979.00</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px">
+                        <div style="width:60%; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); color:white;background-color: #0ace9f;border-radius: 10px; padding: 20px; margin: auto;">
+                            <p style="margin: 0"><strong>Buy Now</strong></p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px">
+                        <div style="width:60%; border-radius: 10px; border: 2px solid black; padding: 20px; margin: auto;">
+                            <p style="margin: 0"><strong>Add to Cart</strong></p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

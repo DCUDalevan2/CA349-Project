@@ -28,5 +28,12 @@ def products(request, category):
 
 def item(request, item_id):
     product = Product.objects.get(id=item_id)
-
     return render(request, 'item.html', {'product': product})
+
+
+def login_view(request):
+    return render(request, 'login.html')
+
+
+def signup_view(request):
+    return render(request, 'signup.html')

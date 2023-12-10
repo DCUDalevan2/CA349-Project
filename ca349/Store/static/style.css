@@ -174,3 +174,55 @@ a {
     list-style-image: url(image/list_box.svg);
     margin-top: 10px;
 }
+
+
+
+/*Login & Sign up*/
+.form_background {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: #ffffff;
+    background-image: url("image/login_background.png");
+}
+
+
+.form_container {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.form_container_2 {
+    background-color: #f8f8f8;
+    border-radius: 0 12px 12px 0;
+    padding: 16px;
+}
+.form_input {
+    width: 350px;
+    height: 40px;
+    margin: 4px 0;
+    padding-left: 25px;
+    font-size: 13px;
+    letter-spacing: 0.15px;
+    border: 3px solid #0ACE9F;
+    outline: none;
+    background-color: #F8F8F8;
+    transition: 0.25s ease;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9;
+}
+
+.form_input:focus {
+    box-shadow: inset 4px 4px 4px #d1d9e6, inset -4px -4px 4px #f9f9f9;
+}
+
+.form_link {
+    margin: 8px 0 8px 0;
+}
+
+.form_link a {
+    color: black;
+}
