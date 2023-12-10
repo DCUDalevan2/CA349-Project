@@ -176,7 +176,6 @@ a {
 }
 
 
-
 /*Login & Sign up*/
 .form_background {
     width: 100%;
@@ -200,6 +199,7 @@ a {
     border-radius: 0 12px 12px 0;
     padding: 16px;
 }
+
 .form_input {
     width: 350px;
     height: 40px;
