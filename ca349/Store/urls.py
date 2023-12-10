@@ -8,5 +8,9 @@ urlpatterns = [
     path('products/<str:category>/', views.products, name='products'),
     path('item/<int:item_id>/', views.item, name='item'),
     path('login/', views.login_view, name='login'),
-    path('signup', views.signup_view, name='signup')
+    path('signup/', views.signup_view, name='signup'),
+    path('payment/', views.payment, name='payment'),
+    path('checkout/<int:item_id>/', views.checkout, name='checkout'),
+    path('success/', views.success, name='success'),
+    path('cancel/', views.cancel, name='cancel'),
 ]

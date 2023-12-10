@@ -1,19 +1,37 @@
 # Prototype application of ca349.
 
 ### Create virtual environment:
+
 ##### Windows: 
-`py -m venv venv`
-`venv\Scripts\activate.bat`
+create: `py -m venv venv`
+
+activate: `venv\Scripts\activate.bat`
+
 ##### MacOS:
-`python3 -m venv venv`
-`source venv/bin/activate`
+create: `python3 -m venv venv`
+
+activate: `source venv/bin/activate`
 
 ### install requirements:
+`pip install -r requirements.txt`
 
-`pip instlal -r requirements.txt`
+### Payment test
 
+| Brand      | Card Number      | CVV              | Expired Date    |
+|------------|------------------|------------------|-----------------|
+| Visa       | 4242424242424242 | Any three digits | Any future date |
+| Mastercard | 5555555555554444 | Any three digits | Any future date |
 
-### Administer Account
-superuser: admin
-password: student349
+### Administrator Account
+superuser: `admin`
 
+password: `student349`
+
+## Group member:
+Jervis Chen
+
+Nadishwara Dalevadoo
+
+Beibei Pan
+
+Anzhe Yuan

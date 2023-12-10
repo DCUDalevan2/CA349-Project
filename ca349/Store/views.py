@@ -31,6 +31,24 @@ def item(request, item_id):
     return render(request, 'item.html', {'product': product})
 
 
+def payment(request, item_id):
+    product = Product.objects.get(id=item_id)
+    return render(request, 'payment.html', {'product': product})
+
+
+def checkout(request, item_id):
+    product = Product.objects.get(id=item_id)
+    return render(request, 'checkout.html', {'product': product})
+
+
+def success(request):
+    return render(request, 'success.html')
+
+
+def cancel(request):
+    return render(request, 'cancel.html')
+
+
 def login_view(request):
     return render(request, 'login.html')
 
