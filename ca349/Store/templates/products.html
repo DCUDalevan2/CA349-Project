@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block main %}
+    <br>
+    <h1 style="text-align: center; font-size: 64px; font-weight: 600;">Featured Products</h1>
+    <p style="text-align: center">Discover our latest selection of high-quality mobile phones.</p>
+    <div class="product_grid">
+        {% for item in products %}
+            <div class="product_grid_cell">
+                <a href="{% url 'item' item.id %}">
+                    <img src="{{ item.cover_pic.url }}" alt="picture">
+                    <div>
+                        <p>{{ item }}</p>
+                        {% if item.memory %}
+                            <p>{{ item.memory }}</p>
+                        {% else %}
+                        {% endif %}
+                        <p>€{{ item.price }}</p>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

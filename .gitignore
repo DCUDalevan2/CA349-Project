@@ -1,0 +1,16 @@
+### Mac ###
+.DS_Store
+
+### Shell script file ###
+*.sh
+
+### Pycaharm ###
+.idea
+
+
+### virtural environment ###
+venv
+
+### cache ###
+__pycache__
+*.pyc

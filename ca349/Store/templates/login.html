@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Login
+{% endblock title %}
+
+
+{% block header %}
+{% endblock %}
+
+{% block main %}
+    <div class="form_background">
+        <div class="container form_container text-center">
+            <div class="row">
+                <div class="col-5 form_container text-center" style="margin: auto">
+                    <div class="form">
+                        <h2 class="form_title title">Login</h2>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="h5" style="text-align: left">Username:</div>
+                                <input type="text" class="form_input" placeholder="Username">
+                            </div>
+                            <div class="col-12">
+                                <div class="h5" style="text-align: left">Password:</div>
+                                <input type="text" class="form_input" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form_link"><a href="{% url "signup" %}">Don’t have an account? Sign up</a></div>
+                        <a href="{% url "index" %}">
+                            <button class="login">Login</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <img src="{% static 'image/login_image.png' %}" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
