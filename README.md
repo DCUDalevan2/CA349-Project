@@ -33,6 +33,15 @@ superuser: `admin`
 
 password: `student349`
 
+### Keep Django run on ec2
+```shell
+screen
+sudo python3 manage.py runserver 0.0.0.0:80
+```
+Then:
+
+Press `Ctrl+A` then `D`
+
 ## Group member:
 Jervis Chen
 
