@@ -45,10 +45,6 @@ def success(request):
     return render(request, 'success.html')
 
 
-def cancel(request):
-    return render(request, 'cancel.html')
-
-
 def login_view(request):
     return render(request, 'login.html')
 
